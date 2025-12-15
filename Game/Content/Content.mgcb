@@ -1,0 +1,326 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+
+#begin Audio/Music/Diecorp.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Audio/Music/Diecorp.mp3
+
+#begin Audio/Music/Dietopia.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Audio/Music/Dietopia.mp3
+
+#begin Audio/Music/Dream.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Audio/Music/Dream.mp3
+
+#begin Audio/Music/Elseworld.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Audio/Music/Elseworld.mp3
+
+#begin Audio/Music/EndOfDietopia.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Audio/Music/EndOfDietopia.mp3
+
+#begin Audio/Music/Factory.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Audio/Music/Factory.mp3
+
+#begin Audio/Music/Pits.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Audio/Music/Pits.mp3
+
+#begin Audio/Music/Rockville.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Audio/Music/Rockville.mp3
+
+#begin Audio/Music/Wasteland.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Audio/Music/Wasteland.mp3
+
+#begin Audio/Music/WelcomeToDietopia.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Audio/Music/WelcomeToDietopia.mp3
+
+#begin Audio/SFX/click.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/SFX/click.wav
+
+#begin Audio/SFX/dash1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/SFX/dash1.wav
+
+#begin Audio/SFX/dash2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/SFX/dash2.wav
+
+#begin Audio/SFX/dash3.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/SFX/dash3.wav
+
+#begin Audio/SFX/death.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/SFX/death.wav
+
+#begin Audio/SFX/hit1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/SFX/hit1.wav
+
+#begin Audio/SFX/hit2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/SFX/hit2.wav
+
+#begin Audio/SFX/hit3.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/SFX/hit3.wav
+
+#begin Audio/SFX/menu.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/SFX/menu.wav
+
+#begin Audio/SFX/phase.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/SFX/phase.wav
+
+#begin Data/Levels/level1_data.xml
+/copy:Data/Levels/level1_data.xml
+
+#begin Data/Levels/level2_data.xml
+/copy:Data/Levels/level2_data.xml
+
+#begin Data/Levels/level3_data.xml
+/copy:Data/Levels/level3_data.xml
+
+#begin Data/Levels/level4_data.xml
+/copy:Data/Levels/level4_data.xml
+
+#begin Data/Levels/level5_data.xml
+/copy:Data/Levels/level5_data.xml
+
+#begin Data/Levels/level6_data.xml
+/copy:Data/Levels/level6_data.xml
+
+#begin Data/Levels/level7_data.xml
+/copy:Data/Levels/level7_data.xml
+
+#begin Data/Levels/level8_data.xml
+/copy:Data/Levels/level8_data.xml
+
+#begin Data/Levels/level9_data.xml
+/copy:Data/Levels/level9_data.xml
+
+#begin Fonts/die_font.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/die_font.spritefont
+
+#begin Fonts/Die.ttf
+/copy:Fonts/Die.ttf
+
+#begin Fonts/peaberrybase_font.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/peaberrybase_font.spritefont
+
+#begin Fonts/PeaberryBase.ttf
+/copy:Fonts/PeaberryBase.ttf
+
+#begin Fonts/WhitePeaberry.fnt
+/copy:Fonts/WhitePeaberry.fnt
+
+#begin Fonts/WhitePeaberry.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Fonts/WhitePeaberry.png
+
+#begin Images/Atlas/enemy_dice_atlas.xml
+/copy:Images/Atlas/enemy_dice_atlas.xml
+
+#begin Images/Atlas/player_ascension_dice_atlas.xml
+/copy:Images/Atlas/player_ascension_dice_atlas.xml
+
+#begin Images/Atlas/player_dash_dice_atlas.xml
+/copy:Images/Atlas/player_dash_dice_atlas.xml
+
+#begin Images/Atlas/player_dice_atlas.xml
+/copy:Images/Atlas/player_dice_atlas.xml
+
+#begin Images/Atlas/target_dice_atlas.xml
+/copy:Images/Atlas/target_dice_atlas.xml
+
+#begin Images/Atlas/ui_atlas.xml
+/copy:Images/Atlas/ui_atlas.xml
+
+#begin Images/Dice/enemy_dice.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/Dice/enemy_dice.png
+
+#begin Images/Dice/player_ascension_dice.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/Dice/player_ascension_dice.png
+
+#begin Images/Dice/player_dash_dice.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/Dice/player_dash_dice.png
+
+#begin Images/Dice/player_dice.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/Dice/player_dice.png
+
+#begin Images/Dice/target_dice.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/Dice/target_dice.png
+
+#begin Images/Levels/XML/level1.xml
+/copy:Images/Levels/XML/level1.xml
+
+#begin Images/Levels/XML/level2.xml
+/copy:Images/Levels/XML/level2.xml
+
+#begin Images/Levels/XML/level3.xml
+/copy:Images/Levels/XML/level3.xml
+
+#begin Images/Levels/XML/level4.xml
+/copy:Images/Levels/XML/level4.xml
+
+#begin Images/Levels/XML/level5.xml
+/copy:Images/Levels/XML/level5.xml
+
+#begin Images/Levels/XML/level6.xml
+/copy:Images/Levels/XML/level6.xml
+
+#begin Images/Levels/XML/level7.xml
+/copy:Images/Levels/XML/level7.xml
+
+#begin Images/Levels/XML/level8.xml
+/copy:Images/Levels/XML/level8.xml
+
+#begin Images/Levels/XML/level9.xml
+/copy:Images/Levels/XML/level9.xml
+
+#begin Images/Tiles/level_tiles.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/Tiles/level_tiles.png
+
+#begin Images/UI/ui_elements.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/UI/ui_elements.png
+

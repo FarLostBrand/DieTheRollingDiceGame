@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--Contains all the info about the level-->
+<Level
+  header="The End of Dietopia"
+  message="Extra Life"
+  levelNumber="8"
+  color="#0f0d0e"
+  tilemapPath="Images/Levels/XML/level8.xml"
+  songName="EndOfDietopia"
+  hasDash="true"
+  hasPhase="true"
+  extraHealth="1"
+>
+  <Targets>
+    <Target health="1"/>
+    <Target health="1"/>
+    <Target health="1"/>
+    <Target health="1"/>
+    <Target health="1"/>
+    <Target health="1"/>
+    <Target health="1"/>
+    <Target health="1"/>
+    <Target health="2"/>
+    <Target health="2"/>
+    <Target health="2"/>
+    <Target health="2"/>
+    <Target health="4"/>
+    <Target health="4"/>
+  </Targets>
+
+  <Enemies>
+    <Enemy health="1"/>
+    <Enemy health="1"/>
+    <Enemy health="1"/>
+    <Enemy health="1"/>
+    <Enemy health="1"/>
+    <Enemy health="1"/>
+    <Enemy health="1"/>
+    <Enemy health="1"/>
+    <Enemy health="2"/>
+    <Enemy health="2"/>
+    <Enemy health="2"/>
+    <Enemy health="2"/>
+    <Enemy health="4"/>
+    <Enemy health="4"/>
+  </Enemies>
+</Level>
