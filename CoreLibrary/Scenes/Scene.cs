@@ -1,19 +1,3 @@
-/***************************************************************
- * File: Scene.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The Scene class serves as the abstract base for all game scenes.
- *  It provides structure for scene lifecycle management including
- *  initialization, content loading, updating, drawing, and disposal.
- *  Each derived Scene manages its own content through a unique
- *  ContentManager instance to allow clean unloading on scene exit.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;

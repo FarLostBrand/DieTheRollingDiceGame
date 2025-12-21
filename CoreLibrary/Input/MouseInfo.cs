@@ -1,17 +1,3 @@
-/***************************************************************
- * File: MouseInfo.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  Tracks current and previous mouse input, including position,
- *  movement, scroll wheel changes, and button press/release states.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
-
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 

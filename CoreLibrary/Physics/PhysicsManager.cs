@@ -1,21 +1,3 @@
-/***************************************************************
- * File: PhysicsManager.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The PhysicsManager class serves as the central physics system
- *  responsible for updating rigidbodies, detecting collisions, 
- *  and resolving interactions with static tile colliders.
- * 
- *  This class implements a singleton pattern for global access 
- *  and manages rigidbodies, collision manifolds, and tile-based
- *  collision checks.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

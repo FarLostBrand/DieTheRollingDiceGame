@@ -1,18 +1,3 @@
-/***************************************************************
- * File: AnimatedSprite.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The AnimatedSprite class extends the base Sprite functionality
- *  to support frame-based animations. It cycles through frames in
- *  a provided Animation instance based on elapsed time, updating
- *  the displayed region automatically.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using Microsoft.Xna.Framework;
 

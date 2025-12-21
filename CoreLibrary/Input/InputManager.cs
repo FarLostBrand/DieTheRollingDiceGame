@@ -1,18 +1,3 @@
-/***************************************************************
- * File: InputManager.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The InputManager class serves as a centralized input handler 
- *  for the game, managing the state of keyboard, mouse, and 
- *  multiple gamepads. It provides unified access to input data 
- *  and ensures all devices are updated each frame.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using Microsoft.Xna.Framework;
 
 namespace CoreLibrary.Input;

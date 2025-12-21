@@ -2,6 +2,8 @@
 
 Welcome to Die! This game is a heavily improved remake of the original hit game [DIE](https://tnaz.itch.io/die) make for GMTK 2022. It offers enhanced features, a new 2d art style, and more!
 
+I feel it is important to clarify that this is my first REAL game in a sense. It's the first game I've developed by myself and is my first game I didn't use a game engine for. There are issues/bugs, but I find pleasure in them since it shows the imperfections of something that shouldn't be perfect. This was made in 1 week, with VERY VERY little time available, so I don't feel obligated to make changes. This is open source so feel free to use my stuff!
+
 ## ✒️ Description
 
 In this combat round marathon you will traverse 9 distinct levels in order to achieve ascension. Players will play as a newly freed die and will attempt to liberate its brethren while avoiding the Corrupted. The land of dice is a land of balance. The Corrupted keep the Controlled in check, preventing one from ascending and keeping the world from being destroyed. This game is the legend of Die, the rolling die who saved it all. Or well... tried to. In the many timelines of Die, there were times of failure. Times when Die lost all his dots and became one with those he despises. Will your time be different? Will you achieve ascension?
@@ -17,101 +19,6 @@ With Die becoming more unstable, he is now able to phase as of Level 3, the Diet
 Levels 4, 5, and 6 follow the story of Die as he progresses through the Dietopia desert, factory, and frosted wasteland. Featuring larger maps with different designs, more Corrupted, and more Controlled, drastically changing the difficulty of the game.
 
 Finalizing the increase of difficulty is the Final 3. Levels 7, 8, 9, is where Die has achieved catastrophic levels of destruction. Level 7 Dietopia starts to tear between cold and hot. Following this level, in level 8 the player will complete the ending of the world, having the world crumble into magma. Finally Die will ascend and will exist in the void, where the player will conquer the nightmares of Die in one last fight. During these levels, the player will receive 1 extra dot at the start of each level due to Die nearing his ascension. The game will be hard, but not impossible.
-
-## 📃 Requirements
-
-1. The player can move Die using the `ARROW KEYS`.
-2. The player can use a dash by clicking the `Z` key.
-3. Dashing can only be done again after a cooldown.
-4. The player can phase for a small period of time by clicking the `X` key.
-5. Phasing can only be done again after a cooldown.
-6. Dashing is unlocked at level 2 and phasing is unlocked at level 3.
-7. The player can access settings by hitting the `ESC` key or by clicking on settings in the startup page before a new run.
-8. Settings are persistent.
-9. Can adjust sound in settings.
-10. Can set game resolution in settings.
-11. Can set controls in settings.
-12. On levels 7, 8, and 9 the player will receive a new dot if not already at max.
-13. Every level changes to the appropriate level layout and generates the proper enemies and targets.
-14. The player can collide with the targets, reducing the life of the target.
-15. Once a target's health reaches 0, it dies.
-16. The player takes damage if it collides with an enemy.
-17. Colliding with an enemy also reduces its life.
-18. If an enemy reaches 0 life it dies.
-19. The player must complete the run in 1 sitting.
-20. Reaching 0 lives results in losing the game.
-21. Completing level 9 results in winning the game.
-22. The player can cancel any dash by clicking a new key.
-
-### 🤖 State Diagram
-
-#### Scene State Diagram
-
-![Scene State Diagram](./Game/Content/Images/Diagrams/SceneStateDiagram.png)
-
-#### Dice State Diagram
-
-![Dice State Diagram](./Game/Content/Images/Diagrams/DiceStateDiagram.png)
-
-### 🗺️ Class Diagram
-
-#### Scene Class Diagram
-
-![Scene Class Diagram](./Game/Content/Images/Diagrams/SceneClassDiagram.png)
-
-#### State Class Diagram
-
-![State Class Diagram](./Game/Content/Images/Diagrams/StateClassDiagram.png)
-
-#### Dice Class Diagram
-
-![Dice Class Diagram](./Game/Content/Images/Diagrams/DiceClassDiagram.png)
-
-#### Settings Class Diagram
-
-![Settings Class Diagram](./Game/Content/Images/Diagrams/SettingsClassDiagram.png)
-
-### 🧵 Wireframes
-
-#### Main Menu
-
-![Main Menu](./Game/Content/Images/Wireframes/MainMenu.png)
-
-- **Play**: will start the game.
-- **Settings**: will allow the player to adjust their settings before the game starts.
-- **Quit**: will exit the game nicely :D
-
-#### Pause Menu
-
-![Pause Menu](./Game/Content/Images/Wireframes/PauseMenu.png)
-
-- **Audio**: slider to adjust the audio.
-- **Graphics**: will allow the player to adjust their graphics.
-- **Controls**: allows the player to adjust their controls.
-- **Save**: will save changes to settings.
-- **Back**: will exit settings.
-
-#### Settings
-
-![Pause Menu](./Game/Content/Images/Wireframes/Settings.png)
-
-- **Resume**: will resume the game.
-- **Settings**: will allow the player to adjust their settings during the game.
-- **Quit**: will exit the game nicely :D
-
-#### Game Over (You lose)
-
-![Game Over](./Game/Content/Images/Wireframes/GameOver.png)
-
-- **Play**: will restart the game.
-- **Quit**: will exit the game nicely :D
-
-#### You Win
-
-![You Win](./Game/Content/Images/Wireframes/YouWin.png)
-
-- **Play**: will restart the game.
-- **Quit**: will exit the game nicely :D
 
 #### Gameboards
 
@@ -155,7 +62,7 @@ For the gameboards, they are all designed using Tiled off of my tilesheets for e
 
 ### 🎨 Assets
 
-The goal is to make this game be my sole creation while respecting the atmosphere of 2d top down pixel art games. To achieve this, 95% of assets of any sort will be made by me. This being said, things like fonts I will be using ones from online that are copyright free. Attributions will be made accordingly.
+The goal is to make this game be my sole creation while respecting the atmosphere of 2d top down pixel art games. To achieve this, 99% of assets of any sort will be made by me. This being said, things like the peaberrybase font (generic font) I did not make, but it is copyright free. Attributions are made accordingly.
 
 #### 🖼️ Images
 
@@ -203,4 +110,4 @@ Finally, I use [GUM](https://docs.flatredball.com/gum/code/monogame) for everyth
 
 #### 📝 Documentation
 
-All internal comments; Method headers, Inline comments Comment blocks; are written by me. The only exception is the file summaries along side copyright notices which have been generated, but reviewed. This README file was also all written by me based off of the template given with this assignment. Can proudly say all the code is authentically written without AI.
+All internal comments; Method headers, Inline comments Comment blocks; are written by me. This README file was also all written by me based off of the template given with this assignment. Can proudly say all the code is authentically written without AI.

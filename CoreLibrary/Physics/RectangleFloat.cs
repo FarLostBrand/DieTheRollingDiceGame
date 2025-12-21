@@ -1,19 +1,3 @@
-/***************************************************************
- * File: RectangleFloat.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The RectangleFloat struct represents a rectangle using floating-point
- *  precision instead of integers. It provides properties and methods
- *  for position, size, intersection detection, translation, and equality
- *  comparison, making it suitable for precise physics and graphics
- *  calculations in 2D environments.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using Microsoft.Xna.Framework;
 

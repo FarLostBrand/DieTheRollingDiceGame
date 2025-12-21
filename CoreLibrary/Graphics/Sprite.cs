@@ -1,19 +1,3 @@
-/***************************************************************
- * File: Sprite.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The Sprite class represents a drawable 2D image or texture region.
- *  It encapsulates rendering properties such as position, rotation,
- *  scaling, color masking, and layer depth. This class can be used
- *  directly for static images or extended for more complex behaviors
- *  like animations.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;

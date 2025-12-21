@@ -1,19 +1,3 @@
-/***************************************************************
- * File: Dice.cs
- * Author: FarLostBrand
- * Date: December 4, 2025
- * 
- * Summary:
- *  The Dice class represents the main type of entity in the
- *  game. It extends the base GameEntity class and inherits all 
- *  functionality related to animation, physics, and state 
- *  management. Dice specific configuration values may be supplied
- *  through the diceDefinition dictionary during construction.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;

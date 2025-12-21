@@ -1,18 +1,3 @@
-/***************************************************************
- * File: TextureRegion.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The TextureRegion class represents a rectangular subsection
- *  of a texture. It defines a source area that can be drawn using
- *  a SpriteBatch, allowing efficient reuse of a single texture
- *  for multiple sprites or frames of an animation.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 

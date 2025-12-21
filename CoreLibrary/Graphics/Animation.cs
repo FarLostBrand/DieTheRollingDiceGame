@@ -1,18 +1,3 @@
-/***************************************************************
- * File: Animation.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The Animation class represents a frame-based animation sequence
- *  composed of multiple texture regions. Each frame is displayed for
- *  a set duration before progressing to the next, allowing smooth
- *  sprite animations when used with AnimatedSprite.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using System.Collections.Generic;
 

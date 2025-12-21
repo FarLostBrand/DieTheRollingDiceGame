@@ -1,18 +1,3 @@
-/***************************************************************
- * File: Tileset.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The Tileset class represents a collection of uniformly sized 
- *  tiles extracted from a larger texture region. It provides
- *  functionality for retrieving individual tiles based on 
- *  index, row, or column position.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 
 namespace CoreLibrary.Graphics;

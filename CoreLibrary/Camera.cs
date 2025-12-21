@@ -1,20 +1,3 @@
-/***************************************************************
- * File: Camera.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The Camera class provides translation and scaling functionality
- *  for 2D rendering in MonoGame. It defines a transformation matrix
- *  used with SpriteBatch to render the scene from a given position
- *  and zoom level. The camera operates in a top-left coordinate system
- *  and enforces a singleton pattern to ensure only one instance exists
- *  at runtime.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using CoreLibrary.Physics;
 using Microsoft.Xna.Framework;

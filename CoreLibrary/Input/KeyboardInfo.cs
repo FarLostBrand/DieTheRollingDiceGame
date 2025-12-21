@@ -1,17 +1,3 @@
-/***************************************************************
- * File: KeyboardInfo.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The KeyboardInfo class represents and manages the state of 
- *  keyboard input. It provides functionality for detecting 
- *  key presses, releases, and transitions between frames.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using Microsoft.Xna.Framework.Input;
 
 namespace CoreLibrary.Input;

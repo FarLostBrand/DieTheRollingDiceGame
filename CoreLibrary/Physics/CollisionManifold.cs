@@ -1,18 +1,3 @@
-/***************************************************************
- * File: CollisionManifold.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The CollisionManifold class manages and resolves collisions 
- *  between rigidbodies and tilemaps. It provides logic for 
- *  detecting and correcting overlapping entities within a 
- *  tile-based environment.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using System.Collections.Generic;
 using CoreLibrary.Graphics;

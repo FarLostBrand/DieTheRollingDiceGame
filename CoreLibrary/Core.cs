@@ -1,19 +1,3 @@
-/***************************************************************
- * File: Core.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The Core class serves as the central game engine manager.
- *  It initializes and maintains core systems such as graphics,
- *  content, input, and physics, and handles the update and draw
- *  cycles for the active Scene. Core also manages transitions
- *  between scenes and provides global access to key systems.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
