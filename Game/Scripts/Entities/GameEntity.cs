@@ -1,20 +1,3 @@
-/***************************************************************
- * File: GameEntity.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The GameEntity class represents the abstract base for all
- *  in-game entities. It provides core functionality such as
- *  texture/animation handling, physics-based hitboxes, health
- *  attributes, and optional state machine integration. Derived
- *  entities define custom behaviors while relying on shared
- *  update, draw, and lifecycle logic.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using System.Collections.Generic;
 using CoreLibrary;

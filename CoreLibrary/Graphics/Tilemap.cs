@@ -1,18 +1,3 @@
-/***************************************************************
- * File: Tilemap.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The Tilemap class represents a 2D grid of tiles rendered from a 
- *  given tileset. It handles tile rendering, collision data, and 
- *  can be created from an XML configuration file defining layout 
- *  and collision attributes.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using System.Collections.Generic;
 using System.IO;

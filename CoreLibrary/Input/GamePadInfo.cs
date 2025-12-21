@@ -1,18 +1,3 @@
-/***************************************************************
- * File: GamePadInfo.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The GamePadInfo class represents and manages the state of a 
- *  connected gamepad device. It provides functionality for 
- *  detecting button presses, analog stick input, and handling 
- *  vibration feedback per player index.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;

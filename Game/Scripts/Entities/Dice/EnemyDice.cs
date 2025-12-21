@@ -20,8 +20,8 @@ public class EnemyDice(ContentManager content, Dictionary<string, object>? diceD
     public const float VISION_BUFFER = 20;
     private const float SPEED_BUFF = 25;
     private const float GHOST_SPAWN_INTERVAL = 0.5f;
-    private const float GHOST_INITIAL_OPACITY = 0.8f;
-    private const float GHOST_FADE_DURATION = 1000f;
+    private const float GHOST_INITIAL_OPACITY = 0.6f;
+    private const float GHOST_FADE_DURATION = 500f;
     #endregion Constants
 
     #region Properties
@@ -157,7 +157,7 @@ public class EnemyDice(ContentManager content, Dictionary<string, object>? diceD
     /// </summary>
     public override void HandlePlayerVisionCollision(PlayerDice player, GameTime gameTime)
     {
-        if (Vision.Intersects(player.Hitbox.Collider))
+        if (Vision.Intersects(player.Hitbox.Collider) && !player.IsPhasing)
         {
             if (IsTrackingPlayer)
                 Speed = (SPEED_BUFF + SPEED) * Scale.X;

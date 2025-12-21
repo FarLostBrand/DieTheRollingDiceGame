@@ -1,18 +1,3 @@
-/***************************************************************
- * File: State.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The State class serves as the abstract base for all finite-state
- *  machine states. It defines a consistent lifecycle with Enter,
- *  Exit, Update, and Draw methods that can be overridden by derived
- *  states to implement custom behavior for entities or systems.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 

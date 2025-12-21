@@ -13,7 +13,7 @@ public class PlayerDice : Dice
     public const float SPEED = 100f;
 
     #region Properties
-    public bool CanDash {get; private set;}
+    public bool CanDash {get; set;}
 
     public bool CanPhase {get; private set;}
 
@@ -96,5 +96,10 @@ public class PlayerDice : Dice
         return ghost;
     }
 
+    public void CancelDashOnCollision()
+    {
+        if (StateMachine!.CurrentStateName == "PlayerDashState")
+            ChangeState("PlayerNeutralState");
+    }
     #endregion Methods
 }

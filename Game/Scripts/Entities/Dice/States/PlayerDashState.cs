@@ -18,7 +18,7 @@ public class PlayerDashState : PlayerLivingState
 {
     #region Constants
     const int DashPower = 3;
-    const float DECELERATION = 20f; 
+    const float DECELERATION = 1000f; 
     private const float GHOST_SPAWN_INTERVAL = 0.2f;
     private const float GHOST_INITIAL_OPACITY = 1f;
     private const float GHOST_FADE_DURATION = 1000f;
@@ -76,6 +76,7 @@ public class PlayerDashState : PlayerLivingState
     public override void Exit()
     {
         base.Exit();
+        _ghosts.Clear();
     }
 
     /// <summary>
@@ -98,7 +99,7 @@ public class PlayerDashState : PlayerLivingState
         if (IsDashing == true)
         {
             HandleGhostGeneration(gameTime);
-            HandleDashDeceleration();
+            HandleDashDeceleration(gameTime);
             HandleCancelDash();
             return;
         }
@@ -131,7 +132,7 @@ public class PlayerDashState : PlayerLivingState
     /// </summary>
     private void HandleCancelDash()
     {
-        if (Core.Input.Keyboard.AnyKeyJustPressed)
+        if (Core.Input.Keyboard.AnyKeyJustPressed && !Core.Input.Keyboard.WasKeyJustPressed(Keys.J) && !Core.Input.Keyboard.WasKeyJustPressed(Keys.Z))
         {
             Dice!.FlattenSpeed();
             EndDash();
@@ -174,11 +175,11 @@ public class PlayerDashState : PlayerLivingState
     /// <summary>
     /// Makes the dash slowly end by adjusting the dice's velocity.
     /// </summary>
-    private void HandleDashDeceleration()
+    private void HandleDashDeceleration(GameTime gameTime)
     {
         // Progressively get to dice's speed.
-        Dice!.ClampAxisTowardsSpeed(ref Dice!.Hitbox.Velocity.X, DECELERATION);
-        Dice!.ClampAxisTowardsSpeed(ref Dice!.Hitbox.Velocity.Y, DECELERATION);
+        Dice!.ClampAxisTowardsSpeed(ref Dice!.Hitbox.Velocity.X, DECELERATION * (float)gameTime.ElapsedGameTime.TotalSeconds);
+        Dice!.ClampAxisTowardsSpeed(ref Dice!.Hitbox.Velocity.Y, DECELERATION * (float)gameTime.ElapsedGameTime.TotalSeconds);
 
         // Check to see if the dash is over.
         if (Math.Abs(Dice!.Hitbox.Velocity.X) <= Dice!.Speed && Math.Abs(Dice!.Hitbox.Velocity.Y) <= Dice!.Speed)

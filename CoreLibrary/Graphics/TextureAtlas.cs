@@ -1,19 +1,3 @@
-/***************************************************************
- * File: TextureAtlas.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The TextureAtlas class manages a collection of texture regions
- *  and animations derived from a single source texture. It allows
- *  regions and animations to be programmatically added, retrieved,
- *  or loaded from XML configuration files for efficient sprite and
- *  animation management in 2D games.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using System.Collections.Generic;
 using System.IO;

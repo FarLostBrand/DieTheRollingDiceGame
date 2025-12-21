@@ -1,23 +1,3 @@
-/***************************************************************
- * File: AudioController.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The AudioController class provides a unified system for managing
- *  all in-game audio, including both sound effects and songs. It
- *  allows playback, pausing, resuming, and stopping of audio, while
- *  also tracking active sound effect instances for cleanup and state
- *  management. Global volume levels for music and sound effects can
- *  be adjusted or muted, with automatic restoration of previous
- *  levels when unmuted. This class also handles resource disposal
- *  and ensures audio instances are properly cleaned up as they
- *  complete playback.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework.Audio;

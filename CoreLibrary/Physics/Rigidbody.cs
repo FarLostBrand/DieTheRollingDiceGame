@@ -1,17 +1,3 @@
-/***************************************************************
- * File: Rigidbody.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  Represents a 2D physics body within the physics system. The
- *  Rigidbody tracks position, velocity, and collision data, and
- *  determines whether it is dynamic (affected by forces) or static.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using Microsoft.Xna.Framework;
 

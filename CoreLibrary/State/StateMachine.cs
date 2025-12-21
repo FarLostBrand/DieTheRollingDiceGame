@@ -1,20 +1,3 @@
-/***************************************************************
- * File: StateMachine.cs
- * Author: FarLostBrand
- * Date: November 26, 2025
- * 
- * Summary:
- *  The StateMachine class manages a collection of game states.
- *  It maintains the active state, supports adding and switching
- *  between states, and routes update and draw calls to the
- *  currently active state. Each State encapsulates its own
- *  behavior, and the StateMachine ensures proper Enter/Exit
- *  transitions.
- * 
- * License:
- *  © 2025 FarLostBrand. All rights reserved.
- ***************************************************************/
-
 using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
