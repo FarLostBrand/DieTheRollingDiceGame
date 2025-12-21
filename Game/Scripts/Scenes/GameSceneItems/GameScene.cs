@@ -318,6 +318,16 @@ public class GameScene : Scene
         }
     }
 
+    public override void ExitScene()
+    {
+        base.ExitScene();
+        
+        foreach (Dice dice in _dice!)
+        {
+            dice.IsFrozen = true;
+        }
+    }
+
     /// <summary>
     /// Handles your death.
     /// </summary>

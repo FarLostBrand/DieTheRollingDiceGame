@@ -64,6 +64,9 @@ public class PlayState : State
     {
         base.Update(gameTime);
 
+        if (_gameScene!.IsExiting)
+            return;
+
         HandleGameKeyInputs(gameTime);
 
         // Update the dice.
@@ -186,7 +189,6 @@ public class PlayState : State
     private void Restart(GameTime gameTime)
     {
         _restartTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
-        Console.WriteLine(_restartTimer);
 
         if (_restartTimer >= RESTART_TIMER_COOLDOWN)
         {

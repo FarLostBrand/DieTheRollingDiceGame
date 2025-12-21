@@ -141,7 +141,7 @@ public abstract class Scene : IDisposable
     /// <summary>
     /// Performs end of scene operations.
     /// </summary>
-    public void ExitScene()
+    public virtual void ExitScene()
     {
         IsExiting = true;
         Fade(SCENE_FADE_DURATION, true);
