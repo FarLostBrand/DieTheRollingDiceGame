@@ -20,6 +20,8 @@ public class PlayState : State
     #region Fields
     private GameScene? _gameScene;
     private List<Dice>? _dice;
+    private float _restartTimer;
+    private const float RESTART_TIMER_COOLDOWN = 0.5f;
     #endregion Fields
 
     #region Lifecycle Methods
@@ -62,7 +64,7 @@ public class PlayState : State
     {
         base.Update(gameTime);
 
-        HandleGameKeyInputs();
+        HandleGameKeyInputs(gameTime);
 
         // Update the dice.
         foreach (var dice in _dice!)
@@ -164,11 +166,11 @@ public class PlayState : State
     /// <summary>
     /// Handles key inputs while in this state.
     /// </summary>
-    private void HandleGameKeyInputs()
+    private void HandleGameKeyInputs(GameTime gameTime)
     {
         // If the R key is down, restart game.
         if (Core.Input.Keyboard.WasKeyJustPressed(Keys.R)) 
-            Restart();
+            Restart(gameTime);
         
         else if (Core.Input.Keyboard.WasKeyJustPressed(Keys.F1))
             ToggleDebugMode();
@@ -181,9 +183,15 @@ public class PlayState : State
     /// <summary>
     /// Restarts game scene.
     /// </summary>
-    private void Restart()
+    private void Restart(GameTime gameTime)
     {
-        Core.ChangeScene(new GameScene(Levels.LevelType.Level1, 6));
+        _restartTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+        Console.WriteLine(_restartTimer);
+
+        if (_restartTimer >= RESTART_TIMER_COOLDOWN)
+        {
+            Core.ChangeScene(new GameScene(Levels.LevelType.Level1, 6));
+        }
     }
 
     /// <summary>
