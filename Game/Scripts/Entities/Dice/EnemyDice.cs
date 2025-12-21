@@ -157,7 +157,7 @@ public class EnemyDice(ContentManager content, Dictionary<string, object>? diceD
     /// </summary>
     public override void HandlePlayerVisionCollision(PlayerDice player, GameTime gameTime)
     {
-        if (Vision.Intersects(player.Hitbox.Collider))
+        if (Vision.Intersects(player.Hitbox.Collider) && !player.IsPhasing)
         {
             if (IsTrackingPlayer)
                 Speed = (SPEED_BUFF + SPEED) * Scale.X;

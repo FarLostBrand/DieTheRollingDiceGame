@@ -135,7 +135,11 @@ public class PlayState : State
                     if (!player.IsPhasing)
                     {
                         if (other is EnemyDice)
+                        {
                             player.LoseLife();
+                            player.CancelDashOnCollision();
+                        }
+                            
 
                         other.LoseLife();
 

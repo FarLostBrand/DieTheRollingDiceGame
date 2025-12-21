@@ -76,6 +76,7 @@ public class PlayerDashState : PlayerLivingState
     public override void Exit()
     {
         base.Exit();
+        _ghosts.Clear();
     }
 
     /// <summary>
@@ -131,7 +132,7 @@ public class PlayerDashState : PlayerLivingState
     /// </summary>
     private void HandleCancelDash()
     {
-        if (Core.Input.Keyboard.AnyKeyJustPressed)
+        if (Core.Input.Keyboard.AnyKeyJustPressed && !Core.Input.Keyboard.WasKeyJustPressed(Keys.J) && !Core.Input.Keyboard.WasKeyJustPressed(Keys.Z))
         {
             Dice!.FlattenSpeed();
             EndDash();
