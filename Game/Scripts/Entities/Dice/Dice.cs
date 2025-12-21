@@ -29,7 +29,7 @@ public class Dice(ContentManager content, Dictionary<string, object>? diceDefini
     public const float COLLISION_POWER = 2.0f;
     public const float NORMAL_OFFSET = 1.67f;
     public const float DIAGONAL_OFFSET = 3.33f;
-    public const float DECELERATION = 20f; 
+    public const float DECELERATION = 1000f; 
     private const float IFRAMES_DURATION = 1.0f;
     public DiceDirections DiceDirection {get; set;} = DiceDirections.Idle;
     public float DiceOpacity {get; set;} = 1.0f;
@@ -49,7 +49,7 @@ public class Dice(ContentManager content, Dictionary<string, object>? diceDefini
     {
         if (IsHavingKnockback)
         {
-            HandleCollisionDeceleration();
+            HandleCollisionDeceleration(gameTime);
             return;
         }
 
@@ -209,11 +209,11 @@ public class Dice(ContentManager content, Dictionary<string, object>? diceDefini
     /// <summary>
     /// Makes the knockback slowly end by adjusting the dice's velocity.
     /// </summary>
-    private void HandleCollisionDeceleration()
+    private void HandleCollisionDeceleration(GameTime gameTime)
     {
         // Progressively get to dice's speed.
-        ClampAxisTowardsSpeed(ref Hitbox.Velocity.X, DECELERATION);
-        ClampAxisTowardsSpeed(ref Hitbox.Velocity.Y, DECELERATION);
+        ClampAxisTowardsSpeed(ref Hitbox.Velocity.X, DECELERATION * (float)gameTime.ElapsedGameTime.TotalSeconds);
+        ClampAxisTowardsSpeed(ref Hitbox.Velocity.Y, DECELERATION * (float)gameTime.ElapsedGameTime.TotalSeconds);
 
         // Check to see if the knockback is over.
         if (Math.Abs(Hitbox.Velocity.X) <= Speed && Math.Abs(Hitbox.Velocity.Y) <= Speed)
@@ -283,7 +283,7 @@ public class Dice(ContentManager content, Dictionary<string, object>? diceDefini
     {
         _iFramesTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-        DiceOpacity = DiceOpacity == 1.0f ? 0.5f : 1.0f;
+        DiceOpacity = 0.5f;
 
         if (_iFramesTimer >= IFRAMES_DURATION)
         {
